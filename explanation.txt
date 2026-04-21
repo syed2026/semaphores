@@ -1,0 +1,13 @@
+PART 1:
+Mutex ensures only one thread accesses the counter at a time, preventing race conditions.
+Without it, final value may be incorrect.
+
+PART 2:
+empty -> tracks empty slots
+full -> tracks filled slots
+mutex -> ensures mutual exclusion
+
+Removing:
+empty -> overflow
+full -> garbage reads
+mutex -> race condition
